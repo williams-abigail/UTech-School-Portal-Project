@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Workflow - CIT2011</title>
+    <link rel="stylesheet" href="instructor.css">
+</head>
+<body>
+
+    <header>
+        <h1>Instructor Dashboard</h1>
+        <p>Welcome, Instructor. Manage your subjects and grades below.</p>
+    </header>
+
+    <main>
+        <!-- 1. Subject Routing Dropdown Filter -->
+        <section class="controls">
+            <label for="subjectFilter">Select Subject:</label>
+            <select id="subjectFilter">
+                <option value="">-- Choose a Subject --</option>
+                <option value="web-dev">Web Programming (CIT2011)</option>
+                <option value="db-sys">Database Design (CMP2018)</option>
+                <option value="oop">Object-Oriented Programming (CIT2004)</option>
+            </select>
+        </section>
+
+        <!-- 2. Grade Entry Component -->
+        <section class="grade-entry" id="gradeSection" style="display: none;">
+            <h2>Grade Entry: <span id="currentSubjectName"></span></h2>
+            <table id="gradeTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Assignment (30%)</th>
+                        <th>Midterm (30%)</th>
+                        <th>Final Exam (40%)</th>
+                        <th>Final Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be injected by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3. Academic Metrics Processing -->
+        <section class="metrics" id="metricsSection" style="display: none;">
+            <h2>Class Metrics</h2>
+            <div class="metric-cards">
+                <div class="card">
+                    <h3>Class Average</h3>
+                    <p id="classAverage">0%</p>
+                </div>
+                <div class="card">
+                    <h3>Highest Grade</h3>
+                    <p id="highestGrade">0%</p>
+                </div>
+                <div class="card">
+                    <h3>Pass Rate</h3>
+                    <p id="passRate">0%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="instructor.js"></script>
+</body>
+</html>

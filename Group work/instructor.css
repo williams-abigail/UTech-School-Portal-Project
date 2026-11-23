@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    /* Changed to Times New Roman */
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+body {
+    background-color: #fcfcfc; /* Slight off-white to make the red pop */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    /* Changed background to dark red */
+    background-color: #8B0000; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Dropdown Styling */
+.controls {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-left: 5px solid #8B0000; /* Red accent */
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+select:focus {
+    outline: none;
+    border-color: #8B0000;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    /* Changed table header to red */
+    background-color: #B22222; 
+    color: white;
+    font-weight: normal; /* Times New Roman bold can look too heavy */
+    font-size: 18px;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #B22222;
+}
+
+/* Metrics Cards */
+.metrics {
+    margin-top: 30px;
+}
+
+.metric-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    /* Changed cards to a lighter red/crimson */
+    background: #DC143C; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
